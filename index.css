@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+
+:root {
+    --color-terminal: #292b36;
+    --color-bg: #5c4b7a;
+    --color-accent: #5af78d;
+    --borde-redondo: 4px;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Source Code Pro', monospace;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-bg);
+    color: white;
+}
+
+header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.logo {
+    width: 150px;
+}
+
+main {
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 8px 8px 35px 0px rgba(0, 0, 0, 0.75);
+    border-radius: var(--borde-redondo);
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#input-original, #resultado {
+    background-color: var(--color-terminal);
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: white;
+    border-radius: var(--borde-redondo);
+}
+
+#resultado {
+    color: var(--color-accent);
+}
+
+.rango {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type='range'] {
+    -webkit-appearance: none;
+    border-radius: var(--borde-redondo);
+    background: var(--color-terminal);
+    height: 5px;
+    width: 80%;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    cursor: pointer;
+    -webkit-appearance: none;
+    background: white;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    border: 2px solid var(--color-accent);
+}
+
+output {
+    margin-left: 10px;
+}
